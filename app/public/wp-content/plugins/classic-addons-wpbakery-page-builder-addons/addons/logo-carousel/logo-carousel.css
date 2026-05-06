@@ -1,0 +1,28 @@
+.caw-logo-carousel-outer-wrapper .slick-slide img {
+    display: inline-block !important ;
+}
+.caw-logo-carousel-outer-wrapper .slick-prev,
+.caw-logo-carousel-outer-wrapper .slick-next {
+    background: #2dc973 !important;
+    padding: 1px !important;
+}
+.caw-logo-carousel-arrow{
+	text-align: right;
+}
+.caw-logo-carousel-inner-wrapper {
+	text-align: center;
+}
+.caw-logo-carousel-outer-wrapper .slick-slide .caw-logo-carousel-inner-wrapper h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* Classic Addons 4.0 — Grayscale Effect */
+.caw-logo-carousel-grayscale .caw-logo-carousel-inner-wrapper img {
+    filter: grayscale(100%);
+    opacity: .75;
+    transition: filter .3s ease, opacity .3s ease;
+}
+.caw-logo-carousel-grayscale .caw-logo-carousel-inner-wrapper:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}

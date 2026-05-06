@@ -1,0 +1,192 @@
+<?php
+
+$params = array(
+	array(
+		"type" 			=> "dropdown",
+		"heading" 		=> __( 'Select Style', 'classic-addons' ),
+		"param_name" 	=> "style",
+		"description" 	=> __( ' ', 'classic-addons' ),
+		"group" 		=> 'General',
+		"value" 		=> array(
+			'Icon at Top'	 =>	'caw_info_box_style_1',
+			'Icon at Left' =>	'caw_info_box_style_2',
+		)
+	),		
+	array(
+		"type" 			=> "textfield",
+		"heading" 		=> __( 'Heading', 'classic-addons' ),
+		"param_name" 	=> "heading",
+		"description" 	=> __( 'Add title for this info box.', 'classic-addons' ),
+		"value"			=>	"Custom Heading",
+		"group" 		=> 'General',
+	),
+	array(
+		"type" 			=> 	"textarea_html",
+		"heading" 		=> 	__( 'Content', 'classic-addons' ),
+		'holder' 		=> 'div',
+		"param_name" 	=> 	"content",
+		"value"			=>	"<p>Provide some description here.</p>",
+		"group" 		=> 	'General',
+	),
+	array(
+		"type" 			=> "dropdown",
+		"heading" 		=> __( 'Box Shadow', 'classic-addons' ),
+		"param_name" 	=> "shadow",
+		"group" 		=> 'General',
+		"value"			=>	array(
+			"No"	=>	"caw_info_box_shadow0",
+			"Yes"	=>	"caw_info_box_shadow1",
+		)
+	),
+	array(
+		"type" 			=> "dropdown",
+		"heading" 		=> __( 'Box Hover Shadow', 'classic-addons' ),
+		"param_name" 	=> "hovershadow",
+		"group" 		=> 'General',
+		"value"			=>	array(
+			"No"	=>		"",
+			"Yes"	=>		"caw_info_box_hvr_shadow",				)
+	),
+	array(
+		"type" 			=> "dropdown",
+		"heading" 		=> __( 'Link To', 'classic-addons' ),
+		"param_name" 	=> "link",
+		"group" 		=> 'General',
+		"value"			=>	array(
+				"None"			=>		"none",
+				"Complete Box"	=>		"box",
+				"Read More"		=>		"readmore_btn",
+			)
+	),
+	array(
+        "type" 			=> 	"vc_link",
+		"heading" 		=> 	__( 'Url Link', 'classic-addons' ),
+		"param_name" 	=> 	"attach_link",
+		"dependency"    => array(
+			'element' => "link", 
+			'value'   => array('box', 'readmore_btn')
+		),
+		"group" 		=> 	'General',
+    ),
+	array(
+        "type" 			=> 	"textfield",
+		"heading" 		=> 	__( 'Read More Text', 'classic-addons' ),
+		"param_name" 	=> 	"readmore_txt",
+		"description" 	=> 	__( 'Provide read more button text.', 'classic-addons' ),
+		"dependency"    => array( 'element' => "link", 'value' => 'readmore_btn' ),
+		"group" 		=> 	'General',
+    ),
+    array(
+        "type" 			=> 	"colorpicker",
+		"heading" 		=> 	__( 'Button text color', 'classic-addons' ),
+		"param_name" 	=> 	"readmore_txtclr",
+		"description" 	=> 	__( 'Set read more button text color.', 'classic-addons' ),
+		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
+		"group" 		=> 	'General',
+    ),
+    array(
+        "type" 			=> 	"colorpicker",
+		"heading" 		=> 	__( 'Button background color', 'classic-addons' ),
+		"param_name" 	=> 	"readmore_bgclr",
+		"description" 	=> 	__( 'Set read more text background color.', 'classic-addons' ),
+		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
+		"group" 		=> 	'General',
+    ),
+    array(
+        "type" 			=> 	"textfield",
+		"heading" 		=> 	__( 'Button Padding', 'classic-addons' ),
+		"param_name" 	=> 	"readmore_padding",
+		"description" 	=> 	__( 'Provide padding for the button eg: 10px.', 'classic-addons' ),
+		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
+		"group" 		=> 	'General',
+    ),
+    array(
+        "type" 			=> 	"textfield",
+		"heading" 		=> 	__( 'CSS Class', 'classic-addons' ),
+		"param_name" 	=> 	"readmore_class",
+		"description" 	=> 	__( 'Provide css classes to add to the button tag', 'classic-addons' ),
+		"dependency"    => array('element' => "link", 'value' => 'readmore_btn'),
+		"group" 		=> 	'General',
+    ),
+    array(
+        "type"       => "dropdown",
+        "heading"    => __( 'Heading Tag', 'classic-addons' ),
+        "param_name" => "heading_tag",
+        "group"      => 'General',
+        "std"        => 'h3',
+        "value"      => array(
+            'H3 (default)' => 'h3',
+            'H1' => 'h1',
+            'H2' => 'h2',
+            'H4' => 'h4',
+            'H5' => 'h5',
+            'H6' => 'h6',
+            'DIV' => 'div',
+            'P'   => 'p',
+            'SPAN' => 'span',
+        ),
+    ),
+    array(
+        "type"        => "dropdown",
+        "heading"     => __( 'Content Alignment', 'classic-addons' ),
+        "param_name"  => "content_align",
+        "group"       => 'Box Design',
+        "description" => __( 'Overrides the style default. Leave on Default to keep existing behavior.', 'classic-addons' ),
+        "value"       => array(
+            'Default' => '',
+            'Left'    => 'left',
+            'Center'  => 'center',
+            'Right'   => 'right',
+        ),
+    ),
+    array(
+        "type"       => "dropdown",
+        "heading"    => __( 'Hover Effect', 'classic-addons' ),
+        "param_name" => "hover_effect",
+        "group"      => 'Box Design',
+        "value"      => array(
+            'None'      => '',
+            'Lift'      => 'lift',
+            'Zoom'      => 'zoom',
+            'Border'    => 'border',
+            'Background'=> 'bg',
+        ),
+    ),
+    array(
+        "type"       => "colorpicker",
+        "heading"    => __( 'Background Color', 'classic-addons' ),
+        "param_name" => "box_bg_color",
+        "group"      => 'Box Design',
+        "edit_field_class" => "vc_col-xs-6 vc_column",
+    ),
+    array(
+        "type"       => "colorpicker",
+        "heading"    => __( 'Border Color', 'classic-addons' ),
+        "param_name" => "box_border_color",
+        "group"      => 'Box Design',
+        "edit_field_class" => "vc_col-xs-6 vc_column",
+    ),
+    array(
+        "type"        => "textfield",
+        "heading"     => __( 'Border Width', 'classic-addons' ),
+        "param_name"  => "box_border_width",
+        "description" => __( 'e.g. 1px', 'classic-addons' ),
+        "group"       => 'Box Design',
+        "edit_field_class" => "vc_col-xs-6 vc_column",
+    ),
+    array(
+        "type"        => "textfield",
+        "heading"     => __( 'Border Radius', 'classic-addons' ),
+        "param_name"  => "box_border_radius",
+        "description" => __( 'e.g. 6px', 'classic-addons' ),
+        "group"       => 'Box Design',
+        "edit_field_class" => "vc_col-xs-6 vc_column",
+    ),
+    array(
+        "type"        => "textfield",
+        "heading"     => __( 'Box Padding', 'classic-addons' ),
+        "param_name"  => "box_padding",
+        "description" => __( 'e.g. 20px or 20px 15px', 'classic-addons' ),
+        "group"       => 'Box Design',
+    ),
+);

@@ -1,0 +1,89 @@
+.caw-section-title {
+	background-color: #F6F6F6;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #0473AA;
+}
+*[class*="mega_main"] #wpbody .vc_edit-form-tab select {
+    height: auto !important;
+}
+
+.caw-icon-animated-heading.vc_element-icon {
+    background-image: url(../images/animated-heading.png);   
+}
+
+.caw-icon-button.vc_element-icon {
+    background-image: url(../images/button.png);   
+}
+
+.caw-icon-count-up.vc_element-icon {
+    background-image: url(../images/count-up.png);   
+}
+
+.caw-icon-filterable-portfolio.vc_element-icon {
+    background-image: url(../images/filterable-portfolio.png) !important;   
+}
+
+.caw-icon-flip-book.vc_element-icon {
+    background-image: url(../images/flip-book.png);   
+}
+
+.caw-icon-flip-book-item.vc_element-icon {
+    background-image: url(../images/flip-book-item.png);   
+}
+
+.caw-icon-flip-box.vc_element-icon {
+    background-image: url(../images/flip-box.png);   
+}
+
+.caw-icon-info-banner.vc_element-icon {
+    background-image: url(../images/info-banner.png);   
+}
+
+.caw-icon-info-box.vc_element-icon {
+    background-image: url(../images/info-box.png);   
+}
+
+.caw-icon-info-table.vc_element-icon {
+    background-image: url(../images/info-table.png);   
+}
+
+.caw-icon-interactive-banner.vc_element-icon {
+    background-image: url(../images/interactive-banner.png);   
+}
+
+.caw-icon-logo-carousel.vc_element-icon {
+    background-image: url(../images/logo-carousel.png);   
+}
+
+.caw-icon-single-image.vc_element-icon {
+    background-image: url(../images/single-image.png);   
+}
+
+.caw-icon-testimonial-slider.vc_element-icon {
+    background-image: url(../images/testimonial-slider.png) !important;
+}
+.caw-icon-accordion.vc_element-icon {
+    background-image: url(../images/accordion.png) !important;
+}
+.caw-icon-accordion-item.vc_element-icon {
+    background-image: url(../images/accordion-item.png) !important;
+}
+.caw-icon-alert-box.vc_element-icon {
+    background-image: url(../images/alert-box.png) !important;
+}
+.caw-icon-tabs.vc_element-icon {
+    background-image: url(../images/tabs.png) !important;
+}
+.caw-icon-tabs-item.vc_element-icon {
+    background-image: url(../images/tabs-item.png) !important;
+}
+.caw-icon-team-member.vc_element-icon {
+    background-image: url(../images/team-member.png) !important;
+}
+.caw-icon-progress-bar.vc_element-icon {
+    background-image: url(../images/progress-bar.png) !important;
+}
